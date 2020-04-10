@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Nunito+Sans:wght@400;700&display=swap');
+
+
+
+$font-lato: 'Lato', sans-serif;
+$font-nunito: 'Nunito Sans', sans-serif;
+$font-regular: 400;
+$font-bold: 700;
+
+
+// Breakpoints
+$grid-breakpoints: (
+        xs: 0,
+        sm: 575px,
+        md: 767px,
+        lg: 991px,
+        xl: 1199px,
+        xlm: 1399px,
+        xxl: 2499px
+);
+
+$light-grey: #eeeef0;
+$white: #ffffff;
+$black:#000000;
+$grey:#767676;
+$side-bar: #f7f8fb;
+$middle-section: #f2f4f8;
+$red: #ed3a32;
+
+$theme-1: #95894e;
+$theme-2: #56d888;
+$theme-3: #333f48;
+
+$blue-1: #63799b;
+$blue-2: #0b5d80;
+$blue-3: #0087c0;
+$blue-4: #c7e4ff;
+
+

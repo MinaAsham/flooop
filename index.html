@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bootstrap 4 Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body>
+
+<nav class="nav-pad">
+    <div class="container-fluid p-0">
+        <div class="row no-gutters align-items-center">
+            <div class="col-xl-2 col-lg-3 col-auto logo-box">
+                <a class="navbar-brand" href="javascript:void(0);">
+                    <img src="images/logo-full.png" class="img-fluid d-none d-lg-block" alt="Flooop Logo">
+                    <img src="images/logo-icon.png" class="img-fluid d-none d-sm-block d-lg-none" alt="Flooop Logo">
+                </a>
+                <div class="d-block d-lg-none hamburger">
+                    <a href="javascript:void(0);" title="Hamburger Menu"><span class="icon-menu" id="topBarMenuIcon"></span></a>
+                </div>
+            </div>
+            <div class="col-xl-10 col-lg-9 col">
+                <div class="right-box">
+                    <div class="row no-gutters justify-content-between align-items-center">
+                        <div class="col-auto d-none d-md-inline-flex">
+                            <ul>
+                                <li>
+                                    <div class="search-box col align-content-center">
+                                        <span class="icon-search"></span>
+                                        <input type="text">
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col">
+                            <ul class="top-menu">
+                                <li class="d-inline-block d-md-none"><span class="icon-search"></span></li>
+                                <li><span class="icon-text-color"></span><sup class="plus">+</sup></li>
+                                <li><span class="icon-volume-medium"></span></li>
+                                <li><span class="icon-bell"></span></li>
+                                <li>
+                                    <div class="user-img">
+                                        <span class="icon-ctrl"></span>
+                                        <span class="username d-none d-lg-inline">username</span>
+                                        <img src="https://via.placeholder.com/50x50/ccc" alt="" class="img-fluid rounded-circle">
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<main>
+    <div class="side-bar">
+        <div class="d-none d-lg-block hamburger">
+            <a href="javascript:void(0);" title="Hamburger Menu"><span class="icon-menu" id="sideBarMenuIcon"></span></a>
+        </div>
+        <img src="images/logo-full.png" class="img-fluid d-block d-sm-none d-lg-none" alt="Floop Logo" id="sideBarLogo">
+        <ul class="menu-list">
+            <li>
+                <a href="javascript:void(0);" title="Home"><span class="icon-home2"></span> <span class="menu-name">Home</span></a>
+            </li>
+            <li>
+                <a href="javascript:void(0);" title="Services"><span class="icon-file-text"></span> <span class="menu-name">Services</span></a>
+            </li>
+            <li>
+                <a href="javascript:void(0);" title="My Task"><span class="icon-clipboard"></span> <span class="menu-name">My Task</span></a>
+            </li>
+            <li>
+                <a href="javascript:void(0);" title="My Request"><span class="icon-profile"></span> <span class="menu-name">My Request</span></a>
+            </li>
+            <li>
+                <a href="javascript:void(0);" title="My Contacts"><span class="icon-user"></span> <span class="menu-name">My Contacts</span></a>
+            </li>
+            <li>
+                <a href="javascript:void(0);" title="My Documents"><span class="icon-folder-open"></span> <span class="menu-name">My Documents</span></a>
+            </li>
+            <li>
+                <a href="javascript:void(0);" title="Reports"><span class="icon-table"></span> <span class="menu-name">Reports</span></a>
+            </li>
+        </ul>
+    </div>
+    <div class="main-container">
+        <div class="row no-gutters h-100">
+            <div class="col-xl-9">
+                <div class="middle-section">
+                    <div class="latest-request">
+                        <div class="section-title">
+                            <span class="icon-bell"></span>
+                            <h2>Latest Request</h2>
+                        </div>
+                        <div class="owl-carousel owl-theme">
+                            <div class="item">
+                                <div class="card-box red">
+                                    <div class="inner">
+                                        <p>Lorem ipsum dolor.</p>
+                                        <span>10/4/2020</span>
+                                        <span class="status-report">Status Report</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="card-box blue">
+                                    <div class="inner">
+                                        <p>Lorem ipsum dolor.</p>
+                                        <span>10/4/2020</span>
+                                        <span class="status-report">Status Report</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="card-box green">
+                                    <div class="inner">
+                                        <p>Lorem ipsum dolor.</p>
+                                        <span>10/4/2020</span>
+                                        <span class="status-report">Status Report</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="card-box yellow">
+                                    <div class="inner">
+                                        <p>Lorem ipsum dolor.</p>
+                                        <span>10/4/2020</span>
+                                        <span class="status-report">Status Report</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="service-list theme-2">
+                        <div class="section-title">
+                            <span class="icon-bell"></span>
+                            <h2>Service List</h2>
+                        </div>
+
+                        <div class="row no-gutters justify-content-start justify-content-md-around justify-content-xl-start">
+                            <div class="col-auto">
+                                <div class="service">
+                                    <div class="inner">
+                                        <span class="icon-briefcase"></span>
+                                        <span>New License</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-auto">
+                                <div class="service">
+                                    <div class="inner">
+                                        <span class="icon-briefcase"></span>
+                                        <span>New License</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-auto">
+                                <div class="service">
+                                    <div class="inner">
+                                        <span class="icon-briefcase"></span>
+                                        <span>New License</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-auto">
+                                <div class="service">
+                                    <div class="inner">
+                                        <span class="icon-briefcase"></span>
+                                        <span>New License</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-auto">
+                                <div class="service">
+                                    <div class="inner">
+                                        <span class="icon-briefcase"></span>
+                                        <span>New License</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-auto">
+                                <div class="service">
+                                    <div class="inner">
+                                        <span class="icon-briefcase"></span>
+                                        <span>New License</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-auto">
+                                <div class="service">
+                                    <div class="inner">
+                                        <span class="icon-briefcase"></span>
+                                        <span>New License</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-auto">
+                                <div class="service empty">
+                                    <div class="inner">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3">
+                <div class="chart-section">
+                    <div class="title-box">
+                        <div class="row">
+                            <div class="col-6 col-xl-auto text-center text-xl-left">
+                                <span class="title">Transaction</span>
+                            </div>
+                            <div class="col-6 col-xl text-center">
+                                <button class="btn btn-export">
+                                    <span class="icon-file-excel"></span> Export
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="donut-chart">
+                        <div id="part1" class="portion-block"><div class="circle"></div></div>
+                        <div id="part2" class="portion-block"><div class="circle"></div></div>
+                        <div id="part3" class="portion-block"><div class="circle"></div></div>
+                        <div class="center">
+                            52%
+                            <p>Request</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" media="none" onload="if( media != 'all' )
+            media = 'all'">
+<link rel="stylesheet" href="css/style.css" media="none" onload="if( media != 'all' )
+            media = 'all'">
+
+<noscript>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</noscript>
+
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/custom.js"></script>
+</body>
+</html>

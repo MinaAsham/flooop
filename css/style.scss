@@ -1,0 +1,621 @@
+@import "reset";
+@import "variable";
+@import "mixins";
+@import "fonts";
+@import "bootstrap.min.css";
+@import "owl.carousel.min.css";
+@import "owl.theme.default.min.css";
+
+h2 {
+  font-family: $font-lato;
+  font-size: 30px;
+  font-weight: $font-bold;
+  color: $black;
+}
+
+.owl-carousel {
+  .owl-dots {
+    button {
+      outline: none;
+    }
+  }
+}
+
+nav {
+  &.nav-pad {
+    padding: 0 5%;
+  }
+
+  .logo-box {
+    position: relative;
+    padding-right: 10px;
+    border-right: 1px solid $light-grey;
+    @include breakpoints-max(md) {
+      border: none;
+    }
+
+    .navbar-brand {
+      padding: 5px 0;
+      display: block;
+
+      img {
+        @include breakpoints-min-max(sm, lg) {
+          margin-left: 50px;
+        }
+      }
+    }
+
+    .hamburger {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 0;
+
+      span {
+        font-size: 25px;
+        color: $grey;
+      }
+    }
+  }
+
+  .right-box {
+    margin: 0 10px;
+    @include breakpoints-max(md) {
+      margin: 0;
+    }
+
+    .top-menu {
+      display: flex;
+      align-items: center;
+      justify-content: end;
+
+      li {
+        display: inline-block;
+        padding: 5px 10px;
+        @include breakpoints-max(md) {
+          padding: 5px 8px;
+        }
+
+        .user-img {
+          img {
+            vertical-align: middle;
+            @include breakpoints-max(sm) {
+              max-width: 62%;
+            }
+          }
+
+          span.icon-ctrl {
+            display: inline-block;
+            transform: rotate(180deg);
+          }
+        }
+      }
+    }
+
+    span {
+      color: $grey;
+
+      &[class^='icon-'] {
+        font-size: 20px;
+      }
+
+      cursor: pointer;
+    }
+
+    .search-box {
+      position: relative;
+      padding: 0;
+
+      .icon-search {
+        position: absolute;
+        left: 5px;
+        top: 50%;
+        transform: translateY(-50%);
+        color: $grey;
+      }
+
+      input {
+        height: 45px;
+        width: 100%;
+        border: 0;
+        padding-left: 35px;
+        font-size: 15px;
+        color: rgba($grey, .8);
+      }
+    }
+  }
+}
+
+main {
+  position: relative;
+  overflow: hidden;
+  height: calc(100vh - 60px);
+  @include breakpoints-max(sm) {
+    height: calc(100vh - 55px);
+  }
+  @include breakpoints-max(xl) {
+    height: auto;
+    overflow: auto;
+  }
+
+  .side-bar {
+    font-family: $font-lato;
+    background: $side-bar;
+    height: calc(100vh - 60px);
+    @include breakpoints-max(sm) {
+      height: calc(100vh - 55px);
+    }
+    width: 27.5%;
+    float: left;
+    border-right: 1px solid $light-grey;
+    border-top: 1px solid $light-grey;
+    transition: width .15s linear;
+    @include breakpoints-min(xl) {
+      width: 20%;
+      border-right: 1px solid $light-grey;
+    }
+    @include breakpoints-max(lg) {
+      position: absolute;
+      left: -310px;
+      width: 310px;
+      border-right: 0;
+      z-index: 99;
+      transition: left .15s linear;
+    }
+
+    #sideBarLogo {
+      margin-right: auto;
+      margin-top: 50px;
+      @include breakpoints-max(xl) {
+        padding-left: 16.5%;
+      }
+    }
+
+    ul.menu-list {
+      margin-top: 20px;
+      @include breakpoints-min(xl) {
+        padding-left: 25%;
+      }
+      @include breakpoints-max(xl) {
+        padding-left: 16.5%;
+      }
+
+      li {
+        a {
+          padding: 10px 5px;
+          display: inline-block;
+
+          span {
+            color: $grey;
+
+            &[class^='icon-'] {
+              font-size: 20px;
+              margin-right: 5px;
+            }
+          }
+
+          .menu-name {
+            display: inline;
+          }
+        }
+
+        &:hover {
+          span {
+            color: $red;
+          }
+        }
+      }
+    }
+
+    .hamburger {
+      text-align: right;
+      font-size: 25px;
+      padding: 10px;
+      background: $white;
+      color: $grey;
+    }
+
+    @include breakpoints-min(lg) {
+      &.shrunk {
+        width: 5%;
+
+        .hamburger {
+          text-align: center;
+        }
+
+        ul.menu-list {
+          text-align: center;
+          padding-left: 0;
+
+          .menu-name {
+            display: none;
+          }
+        }
+      }
+    }
+    @include breakpoints-max(lg) {
+      &.open {
+        left: 0;
+      }
+    }
+  }
+
+  .main-container {
+    background: $middle-section;
+    border-top: 1px solid $light-grey;
+    
+    @include breakpoints-max(sm) {
+      height: calc(100vh - 55px);
+    }
+    @include breakpoints-max(lg) {
+      margin-left: 0;
+    }
+
+    .middle-section {
+      height: calc(100vh - 60px);
+      @include breakpoints-max(xl) {
+        height: auto;
+      }
+      overflow-y: auto;
+      //&.theme-1{
+      //  background: $theme-1;
+      //}
+      //&.theme-2{
+      //  background: $theme-2;
+      //}
+      //&.theme-3{
+      //  background: $theme-3;
+      //}
+      padding: 50px;
+
+      .section-title {
+        margin-bottom: 50px;
+
+        span {
+          &[class^='icon-'] {
+            background: $grey;
+            border-radius: 50%;
+            padding: 10px;
+            font-size: 25px;
+            margin-right: 5px;
+            color: $white;
+          }
+        }
+
+        h2 {
+          display: inline-block;
+        }
+      }
+
+
+      .latest-request {
+        margin-bottom: 50px;
+
+        .owl-carousel {
+          position: relative;
+
+          .item {
+            .card-box {
+              background: $white;
+              border-radius: 5px;
+              padding: 20px;
+              min-height: 150px;
+              display: flex;
+              align-items: center;
+              position: relative;
+
+              &:before {
+                font-family: icomoon;
+                content: "\ea3c";
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                z-index: 1;
+                padding: 5px;
+                font-size: 20px;
+                color: $white;
+              }
+
+              &:after {
+                content: "";
+                width: 0;
+                height: 0;
+                position: absolute;
+                right: 0;
+                bottom: 0;
+              }
+
+              &.red {
+                .inner {
+                  .status-report {
+                    color: red;
+                  }
+                }
+
+                &:after {
+                  border-bottom: 50px solid red;
+                  border-left: 50px solid transparent;
+                }
+              }
+
+              &.blue {
+                .inner {
+                  .status-report {
+                    color: blue;
+                  }
+                }
+
+                &:after {
+                  border-bottom: 50px solid blue;
+                  border-left: 50px solid transparent;
+                }
+              }
+
+              &.green {
+                .inner {
+                  .status-report {
+                    color: green;
+                  }
+                }
+
+                &:after {
+                  border-bottom: 50px solid green;
+                  border-left: 50px solid transparent;
+                }
+              }
+
+              &.yellow {
+                .inner {
+                  .status-report {
+                    color: yellow;
+                  }
+                }
+
+                &:after {
+                  border-bottom: 50px solid yellow;
+                  border-left: 50px solid transparent;
+                }
+              }
+
+              .inner {
+                width: 100%;
+
+                p {
+                  font-size: 20px;
+                  color: $black;
+                  margin-bottom: 10px;
+                }
+
+                span {
+                  display: block;
+                  font-size: 10px;
+                  color: $grey;
+
+                  &.status-report {
+                    display: block;
+                    font-size: 15px;
+                    text-align: right;
+                    margin: 5% 5% 0 0;
+                  }
+                }
+              }
+            }
+          }
+
+          .owl-dots {
+            position: absolute;
+            top: -50px;
+            right: 0;
+            @include breakpoints-max(sm) {
+              bottom: unset;
+              top: unset;
+              left: 0;
+              right: 0;
+            }
+          }
+        }
+      }
+
+      .service-list {
+        font-family: $font-lato;
+
+        &.theme-1 {
+          .service {
+            background-color: rgba($theme-1, .5);
+
+            &:hover {
+              background-color: $theme-1;
+            }
+
+            &.active {
+              background-color: $theme-1;
+            }
+          }
+        }
+
+        &.theme-2 {
+          .service {
+            background-color: rgba($theme-2, .5);
+
+            &:hover {
+              background-color: $theme-2;
+            }
+
+            &.active {
+              background-color: $theme-2;
+            }
+          }
+        }
+
+        .service {
+          display: flex;
+          align-items: center;
+          width: 180px;
+          height: 180px;
+          margin: 10px;
+          border-radius: 5px;
+          transition: background-color linear;
+
+          .inner {
+            width: 100%;
+            text-align: center;
+
+            span {
+              display: block;
+              text-align: center;
+              font-size: 20px;
+              color: $white;
+
+              &[class^=icon-] {
+                font-size: 50px;
+                margin-bottom: 10px;
+              }
+            }
+          }
+
+          &.empty {
+            background-color: $light-grey;
+
+            span {
+              width: 20px;
+              height: 20px;
+              background-color: rgba($grey, .5);
+              border-radius: 50%;
+              margin: 5px;
+              display: inline-block;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .chart-section {
+    font-family: $font-nunito;
+    padding: 25px 15px;
+    background: $side-bar;
+    border-top: 1px solid $light-grey;
+    height: calc(100vh - 60px);
+    @include breakpoints-max(xl) {
+      height: auto;
+    }
+
+    .title-box {
+      margin-bottom: 50px;
+
+      .title {
+        display: inline-block;
+        color: $blue-1;
+        font-size: 20px;
+      }
+
+      .btn-export {
+        border-radius: 15px;
+        font-size: 13px;
+        border: 1px solid $blue-1;
+        color: $blue-1;
+
+        span {
+          font-size: 10px;
+        }
+      }
+    }
+
+    .donut-chart {
+      position: relative;
+      width: 200px;
+      height: 200px;
+      margin: 0 auto 2rem;
+      border-radius: 100%;
+
+      .center {
+        background: $side-bar;
+        position: absolute;
+        text-align: center;
+        font-size: 28px;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        width: 180px;
+        height: 180px;
+        margin: auto;
+        border-radius: 50%;
+        line-height: 35px;
+        padding: 15% 0 0;
+        font-weight: $font-bold;
+        color: $blue-1;
+      }
+
+      .portion-block {
+        border-radius: 50%;
+        clip: rect(0px, 200px, 200px, 100px);
+        height: 100%;
+        position: absolute;
+        width: 100%;
+      }
+
+      .circle {
+        border-radius: 50%;
+        clip: rect(0px, 100px, 200px, 0px);
+        height: 100%;
+        position: absolute;
+        width: 100%;
+        font-size: 25px;
+        font-weight: $font-bold;
+      }
+
+      #part1 {
+        transform: rotate(0deg);
+        .circle {
+          background-color: $blue-2;
+          animation: first 1s 1 forwards;
+        }
+      }
+
+      #part2 {
+        transform: rotate(100deg);
+        .circle {
+          background-color: $blue-3;
+          animation: second 1s 1 forwards 1s;
+        }
+      }
+
+      #part3 {
+        transform: rotate(250deg);
+        .circle {
+          background-color: $blue-4;
+          animation: third 0.5s 1 forwards 2s;
+        }
+      }
+
+      @include keyframes(first) {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(100deg);
+        }
+      }
+
+      @include keyframes(second) {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(150deg);
+        }
+      }
+
+      @include keyframes(third) {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(111deg);
+        }
+      }
+
+    }
+  }
+}
