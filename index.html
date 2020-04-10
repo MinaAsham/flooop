@@ -61,175 +61,261 @@
             <a href="javascript:void(0);" title="Hamburger Menu"><span class="icon-menu" id="sideBarMenuIcon"></span></a>
         </div>
         <img src="images/logo-full.png" class="img-fluid d-block d-sm-none d-lg-none" alt="Floop Logo" id="sideBarLogo">
-        <ul class="menu-list">
-            <li>
-                <a href="javascript:void(0);" title="Home"><span class="icon-home2"></span> <span class="menu-name">Home</span></a>
-            </li>
-            <li>
-                <a href="javascript:void(0);" title="Services"><span class="icon-file-text"></span> <span class="menu-name">Services</span></a>
-            </li>
-            <li>
-                <a href="javascript:void(0);" title="My Task"><span class="icon-clipboard"></span> <span class="menu-name">My Task</span></a>
-            </li>
-            <li>
-                <a href="javascript:void(0);" title="My Request"><span class="icon-profile"></span> <span class="menu-name">My Request</span></a>
-            </li>
-            <li>
-                <a href="javascript:void(0);" title="My Contacts"><span class="icon-user"></span> <span class="menu-name">My Contacts</span></a>
-            </li>
-            <li>
-                <a href="javascript:void(0);" title="My Documents"><span class="icon-folder-open"></span> <span class="menu-name">My Documents</span></a>
-            </li>
-            <li>
-                <a href="javascript:void(0);" title="Reports"><span class="icon-table"></span> <span class="menu-name">Reports</span></a>
-            </li>
-        </ul>
+        <div class="side-bar-container">
+            <ul class="menu-list">
+                <li>
+                    <a href="javascript:void(0);" title="Home"><span class="icon-home2"></span> <span class="menu-name">Home</span></a>
+                </li>
+                <li>
+                    <a href="javascript:void(0);" title="Services"><span class="icon-file-text"></span> <span class="menu-name">Services</span></a>
+                </li>
+                <li>
+                    <a href="javascript:void(0);" title="My Task"><span class="icon-clipboard"></span> <span class="menu-name">My Task</span></a>
+                </li>
+                <li>
+                    <a href="javascript:void(0);" title="My Request"><span class="icon-profile"></span> <span class="menu-name">My Request</span></a>
+                </li>
+                <li>
+                    <a href="javascript:void(0);" title="My Contacts"><span class="icon-user"></span> <span class="menu-name">My Contacts</span></a>
+                </li>
+                <li>
+                    <a href="javascript:void(0);" title="My Documents"><span class="icon-folder-open"></span> <span class="menu-name">My Documents</span></a>
+                </li>
+                <li>
+                    <a href="javascript:void(0);" title="Reports"><span class="icon-table"></span> <span class="menu-name">Reports</span></a>
+                </li>
+            </ul>
+
+            <div class="img-wrapper">
+                <img src="images/side-bar-img.png" class="img-fluid" alt="Welcome to Bahrain">
+            </div>
+
+            <div class="contact-us">
+                <div><span class="icon-phone"></span> Contact us</div>
+                <p>800-2454</p>
+                <p>+971 24012454</p>
+                <p><a href="maito:clientrelationship@cbb.com">Clientrelationship@cbb.com</a></p>
+                <hr>
+                <p>Time work : 9 am to 5 pm</p>
+                <p>Sunday through Thursday</p>
+            </div>
+
+        </div>
     </div>
     <div class="main-container">
-        <div class="row no-gutters h-100">
-            <div class="col-xl-9">
-                <div class="middle-section">
-                    <div class="latest-request">
-                        <div class="section-title">
-                            <span class="icon-bell"></span>
-                            <h2>Latest Request</h2>
+        <div class="main-inner">
+            <div class="row no-gutters h-100">
+                <div class="col-xl-9 order-1 order-xl-0">
+                    <div class="middle-section">
+                        <div class="latest-request">
+                            <div class="section-title">
+                                <span class="icon-bell"></span>
+                                <h2>Latest Request</h2>
+                            </div>
+                            <div class="owl-carousel owl-theme">
+                                <div class="item">
+                                    <div class="card-box red">
+                                        <div class="inner">
+                                            <p>Lorem ipsum dolor.</p>
+                                            <span>10/4/2020</span>
+                                            <span class="status-report">Status Report</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="card-box blue">
+                                        <div class="inner">
+                                            <p>Lorem ipsum dolor.</p>
+                                            <span>10/4/2020</span>
+                                            <span class="status-report">Status Report</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="card-box green">
+                                        <div class="inner">
+                                            <p>Lorem ipsum dolor.</p>
+                                            <span>10/4/2020</span>
+                                            <span class="status-report">Status Report</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="card-box yellow">
+                                        <div class="inner">
+                                            <p>Lorem ipsum dolor.</p>
+                                            <span>10/4/2020</span>
+                                            <span class="status-report">Status Report</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="owl-carousel owl-theme">
-                            <div class="item">
-                                <div class="card-box red">
-                                    <div class="inner">
-                                        <p>Lorem ipsum dolor.</p>
-                                        <span>10/4/2020</span>
-                                        <span class="status-report">Status Report</span>
+                        <div class="service-list" id="themeChangingSection" data-theme="theme-1">
+                            <div class="section-title">
+                                <span class="icon-bell"></span>
+                                <h2>Service List</h2>
+                            </div>
+
+                            <div class="row no-gutters justify-content-around justify-content-md-center justify-content-xl-start">
+                                <div class="col-auto">
+                                    <div class="service">
+                                        <div class="inner">
+                                            <span class="icon-briefcase"></span>
+                                            <span>New License</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-auto">
+                                    <div class="service">
+                                        <div class="inner">
+                                            <span class="icon-briefcase"></span>
+                                            <span>Authorization</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-auto">
+                                    <div class="service">
+                                        <div class="inner">
+                                            <span class="icon-briefcase"></span>
+                                            <span>Person Status</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-auto">
+                                    <div class="service">
+                                        <div class="inner">
+                                            <span class="icon-briefcase"></span>
+                                            <span>Circulation of resolutions</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-auto">
+                                    <div class="service">
+                                        <div class="inner">
+                                            <span class="icon-briefcase"></span>
+                                            <span>Purchase requisition</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-auto">
+                                    <div class="service">
+                                        <div class="inner">
+                                            <span class="icon-briefcase"></span>
+                                            <span>Request for payment Process</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-auto">
+                                    <div class="service">
+                                        <div class="inner">
+                                            <span class="icon-briefcase"></span>
+                                            <span>Leave encasement</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-auto">
+                                    <div class="service">
+                                        <div class="inner">
+                                            <span class="icon-briefcase"></span>
+                                            <span>Training travel</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-auto">
+                                    <div class="service">
+                                        <div class="inner">
+                                            <span class="icon-briefcase"></span>
+                                            <span>Loan request</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-auto">
+                                    <div class="service empty">
+                                        <div class="inner">
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                            <span class="text">More<br>Application</span>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="item">
-                                <div class="card-box blue">
-                                    <div class="inner">
-                                        <p>Lorem ipsum dolor.</p>
-                                        <span>10/4/2020</span>
-                                        <span class="status-report">Status Report</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="card-box green">
-                                    <div class="inner">
-                                        <p>Lorem ipsum dolor.</p>
-                                        <span>10/4/2020</span>
-                                        <span class="status-report">Status Report</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="card-box yellow">
-                                    <div class="inner">
-                                        <p>Lorem ipsum dolor.</p>
-                                        <span>10/4/2020</span>
-                                        <span class="status-report">Status Report</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="service-list theme-2">
-                        <div class="section-title">
-                            <span class="icon-bell"></span>
-                            <h2>Service List</h2>
                         </div>
 
-                        <div class="row no-gutters justify-content-start justify-content-md-around justify-content-xl-start">
-                            <div class="col-auto">
-                                <div class="service">
-                                    <div class="inner">
-                                        <span class="icon-briefcase"></span>
-                                        <span>New License</span>
-                                    </div>
+                        <footer>
+                            <div class="row align-items-center h-100">
+                                <div class="col-sm-6">
+                                    <ul>
+                                        <li>FAQs</li>
+                                        <li>CONTACT US</li>
+                                        <li>FEEDBACK</li>
+                                    </ul>
+                                </div>
+                                <div class="col-sm-6">
+                                    <p><span id="copyrightYear"></span>&copy; Central Bank of Bahrain</p>
                                 </div>
                             </div>
-                            <div class="col-auto">
-                                <div class="service">
-                                    <div class="inner">
-                                        <span class="icon-briefcase"></span>
-                                        <span>New License</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-auto">
-                                <div class="service">
-                                    <div class="inner">
-                                        <span class="icon-briefcase"></span>
-                                        <span>New License</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-auto">
-                                <div class="service">
-                                    <div class="inner">
-                                        <span class="icon-briefcase"></span>
-                                        <span>New License</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-auto">
-                                <div class="service">
-                                    <div class="inner">
-                                        <span class="icon-briefcase"></span>
-                                        <span>New License</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-auto">
-                                <div class="service">
-                                    <div class="inner">
-                                        <span class="icon-briefcase"></span>
-                                        <span>New License</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-auto">
-                                <div class="service">
-                                    <div class="inner">
-                                        <span class="icon-briefcase"></span>
-                                        <span>New License</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-auto">
-                                <div class="service empty">
-                                    <div class="inner">
-                                        <span></span>
-                                        <span></span>
-                                        <span></span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        </footer>
                     </div>
                 </div>
-            </div>
-            <div class="col-xl-3">
-                <div class="chart-section">
-                    <div class="title-box">
-                        <div class="row">
-                            <div class="col-6 col-xl-auto text-center text-xl-left">
-                                <span class="title">Transaction</span>
-                            </div>
-                            <div class="col-6 col-xl text-center">
-                                <button class="btn btn-export">
-                                    <span class="icon-file-excel"></span> Export
-                                </button>
+                <div class="col-xl-3 order-0 order-xl-1">
+                    <div class="chart-section">
+                        <div class="title-box">
+                            <div class="row align-items-center">
+                                <div class="col-6 col-xl-auto text-center">
+                                    <span class="title">Transaction</span>
+                                </div>
+                                <div class="col-6 col-xl text-center">
+                                    <button class="btn btn-export">
+                                        <span class="icon-file-excel"></span> Export
+                                    </button>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="donut-chart">
-                        <div id="part1" class="portion-block"><div class="circle"></div></div>
-                        <div id="part2" class="portion-block"><div class="circle"></div></div>
-                        <div id="part3" class="portion-block"><div class="circle"></div></div>
-                        <div class="center">
-                            52%
-                            <p>Request</p>
+                        <div class="donut-wrapper">
+                            <div class="row no-gutters align-items-center">
+                                <div class="col-6 col-xl-12">
+                                    <svg width="100%" height="100%" class="donut" viewBox="0 0 42 42" fill="transparent">
+                                        <circle class="donut-hole" cx="21" cy="21"></circle>
+                                        <circle class="donut-ring" cx="21" cy="21" r="15.91549430918954"></circle>
+
+                                        <circle class="donut-segment" r="15.91549430918954" stroke-dashoffset="15" stroke-dasharray="25 75" cx="21" cy="21"></circle>
+                                        <circle class="donut-segment" r="15.91549430918954" stroke-dasharray="40 60" stroke-dashoffset="90" cx="21" cy="21"></circle>
+                                        <g class="chart-text">
+                                            <text x="50%" y="50%" class="chart-inner-number">
+                                                52
+                                            </text>
+                                            <text x="50%" y="50%" class="chart-inner-label">
+                                                Request
+                                            </text>
+                                        </g>
+                                    </svg>
+                                </div>
+                                <div class="col-6 col-xl-12">
+                                    <div class="chart-labels">
+                                        <div class="label-1"><span></span>New Request</div>
+                                        <div class="label-2"><span></span>Existing</div>
+                                        <div class="label-3"><span></span>Total</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="theme-selector-wrapper open">
+                            <p>Select your theme</p>
+                            <span class="icon-ctrl" id="theme-opener-btn"></span>
+                            <ul>
+                                <li class="theme-name active" data-name="theme-1">
+                                    <div class="name"></div>
+                                </li>
+                                <li class="theme-name" data-name="theme-2">
+                                    <div class="name"></div>
+                                </li>
+                                <li class="theme-name" data-name="theme-3">
+                                    <div class="name"></div>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
