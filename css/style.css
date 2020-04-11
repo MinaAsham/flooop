@@ -94,14 +94,26 @@ a {
 .icon-coin-dollar:before {
   content: "\e93b"; }
 
+.icon-credit-card:before {
+  content: "\e93f"; }
+
 .icon-phone:before {
   content: "\e942"; }
+
+.icon-pushpin:before {
+  content: "\e946"; }
 
 .icon-bell:before {
   content: "\e951"; }
 
+.icon-display:before {
+  content: "\e956"; }
+
 .icon-user:before {
   content: "\e971"; }
+
+.icon-users:before {
+  content: "\e972"; }
 
 .icon-search:before {
   content: "\e986"; }
@@ -112,6 +124,12 @@ a {
 .icon-cogs:before {
   content: "\e995"; }
 
+.icon-airplane:before {
+  content: "\e9af"; }
+
+.icon-power:before {
+  content: "\e9b5"; }
+
 .icon-clipboard:before {
   content: "\e9b8"; }
 
@@ -121,8 +139,14 @@ a {
 .icon-menu:before {
   content: "\e9bd"; }
 
+.icon-sphere:before {
+  content: "\e9c9"; }
+
 .icon-flag:before {
   content: "\e9cc"; }
+
+.icon-point-up:before {
+  content: "\ea03"; }
 
 .icon-volume-medium:before {
   content: "\ea27"; }
@@ -136,18 +160,24 @@ a {
 .icon-text-color:before {
   content: "\ea6d"; }
 
+.icon-table:before {
+  content: "\ea70"; }
+
 .icon-file-excel:before {
   content: "\eae2"; }
 
-.icon-table:before {
-  content: "\ea70"; }
+:root {
+  --font-13: 13px;
+  --font-15: 15px;
+  --font-20: 20px;
+  --font-30: 30px; }
 
 html {
   overflow: hidden; }
 
 h2 {
   font-family: "Lato", sans-serif;
-  font-size: 30px;
+  font-size: var(--font-30);
   font-weight: 700;
   color: #000000; }
 
@@ -314,7 +344,11 @@ main {
           main .side-bar.shrunk .side-bar-container ul.menu-list {
             text-align: center; }
             main .side-bar.shrunk .side-bar-container ul.menu-list .menu-name {
-              display: none; } }
+              display: none; }
+        main .side-bar.shrunk .img-wrapper {
+          display: none; }
+        main .side-bar.shrunk .contact-us {
+          display: none; } }
     @media (max-width: 991px) {
       main .side-bar.open {
         left: 0;
@@ -332,7 +366,7 @@ main {
         main .side-bar .contact-us div span {
           font-size: 25px; }
       main .side-bar .contact-us p {
-        font-size: 13px;
+        font-size: var(--font-13);
         margin-bottom: 10px; }
   main .main-container {
     background: #f2f4f8;
@@ -351,13 +385,10 @@ main {
       main .main-container .main-inner .middle-section {
         position: relative;
         height: 100%;
-        padding: 30px; }
-        @media (max-width: 991px) {
-          main .main-container .main-inner .middle-section {
-            margin-bottom: 97px; } }
+        padding: 30px 30px 120px 30px; }
         @media (max-width: 575px) {
           main .main-container .main-inner .middle-section {
-            padding: 30px 15px; } }
+            padding: 30px 15px 97px 15px; } }
         main .main-container .main-inner .middle-section .section-title {
           margin-bottom: 30px; }
           main .main-container .main-inner .middle-section .section-title span[class^='icon-'] {
@@ -421,7 +452,7 @@ main {
               main .main-container .main-inner .middle-section .latest-request .owl-carousel .item .card-box .inner {
                 width: 100%; }
                 main .main-container .main-inner .middle-section .latest-request .owl-carousel .item .card-box .inner p {
-                  font-size: 20px;
+                  font-size: var(--font-20);
                   color: #000000;
                   margin-bottom: 10px; }
                 main .main-container .main-inner .middle-section .latest-request .owl-carousel .item .card-box .inner span {
@@ -489,7 +520,7 @@ main {
               main .main-container .main-inner .middle-section .service-list .service .inner span {
                 display: block;
                 text-align: center;
-                font-size: 15px;
+                font-size: var(--font-15);
                 color: #ffffff; }
                 main .main-container .main-inner .middle-section .service-list .service .inner span[class^=icon-] {
                   font-size: 50px;
@@ -509,8 +540,10 @@ main {
                   background-color: unset;
                   display: block;
                   text-align: center;
-                  font-size: 15px;
+                  font-size: var(--font-15);
                   color: #333f48; }
+              main .main-container .main-inner .middle-section .service-list .service.empty:hover span.text {
+                color: #ffffff; }
       main .main-container .main-inner .chart-section {
         font-family: "Nunito Sans", sans-serif;
         padding: 25px 15px;
@@ -524,7 +557,7 @@ main {
           main .main-container .main-inner .chart-section .title-box .title {
             display: inline-block;
             color: #63799b;
-            font-size: 20px; }
+            font-size: var(--font-20); }
           main .main-container .main-inner .chart-section .title-box .btn-export {
             border-radius: 15px;
             font-size: 13px;
@@ -569,14 +602,14 @@ main {
                 text-anchor: middle;
                 transform: translateY(-5%); }
               main .main-container .main-inner .chart-section .donut-wrapper .donut .chart-text .chart-inner-label {
-                font-size: 0.15em;
                 text-transform: uppercase;
                 text-anchor: middle;
+                font-size: 0.15em;
                 transform: translateY(5%); }
         main .main-container .main-inner .chart-section .chart-labels {
           font-family: "Nunito Sans", sans-serif; }
           main .main-container .main-inner .chart-section .chart-labels [class^='label-'] {
-            font-size: 15px;
+            font-size: var(--font-15);
             display: flex;
             align-items: center;
             padding-left: 25%; }
@@ -609,9 +642,9 @@ main {
             top: 0;
             left: 0;
             right: 0;
-            font-size: 15px;
             font-family: "Nunito Sans", sans-serif;
             font-weight: 700;
+            font-size: 15px;
             text-align: center;
             padding: 5px; }
           main .main-container .main-inner .chart-section .theme-selector-wrapper span[class="icon-ctrl"] {
@@ -637,19 +670,10 @@ main {
                 border: 2px solid #0b5d80; }
               main .main-container .main-inner .chart-section .theme-selector-wrapper ul .theme-name[data-name='theme-1'] {
                 background-color: #95894e; }
-                main .main-container .main-inner .chart-section .theme-selector-wrapper ul .theme-name[data-name='theme-1'] .name {
-                  color: #95894e; }
               main .main-container .main-inner .chart-section .theme-selector-wrapper ul .theme-name[data-name='theme-2'] {
                 background-color: #56d888; }
-                main .main-container .main-inner .chart-section .theme-selector-wrapper ul .theme-name[data-name='theme-2'] .name {
-                  color: #56d888; }
               main .main-container .main-inner .chart-section .theme-selector-wrapper ul .theme-name[data-name='theme-3'] {
                 background-color: #333f48; }
-                main .main-container .main-inner .chart-section .theme-selector-wrapper ul .theme-name[data-name='theme-3'] .name {
-                  color: #333f48; }
-              main .main-container .main-inner .chart-section .theme-selector-wrapper ul .theme-name .name {
-                font-family: "Nunito Sans", sans-serif;
-                font-size: 16px; }
           @media (max-width: 1199px) {
             main .main-container .main-inner .chart-section .theme-selector-wrapper {
               position: fixed;
@@ -659,6 +683,8 @@ main {
               bottom: unset;
               border-left: 1px solid #eeeef0;
               border-bottom: 1px solid #eeeef0;
+              border-top-left-radius: 5px;
+              border-bottom-left-radius: 5px;
               z-index: 999;
               padding-top: 65px;
               padding-bottom: 15px;
@@ -685,11 +711,11 @@ main {
 
 footer {
   position: absolute;
-  bottom: -97px;
+  bottom: 0;
   left: 0;
   right: 0;
   font-family: "Lato", sans-serif;
-  font-size: 13px;
+  font-size: var(--font-13);
   color: #000000;
   height: 97px;
   border-top: 1px solid black;

@@ -6,13 +6,20 @@
 @import "owl.carousel.min.css";
 @import "owl.theme.default.min.css";
 
+:root {
+  --font-13: 13px;
+  --font-15: 15px;
+  --font-20: 20px;
+  --font-30: 30px;
+}
+
 html {
   overflow: hidden;
 }
 
 h2 {
   font-family: $font-lato;
-  font-size: 30px;
+  font-size: var(--font-30);
   font-weight: $font-bold;
   color: $black;
 }
@@ -259,6 +266,13 @@ main {
 
         }
 
+        .img-wrapper {
+          display: none;
+        }
+
+        .contact-us {
+          display: none;
+        }
 
       }
     }
@@ -283,7 +297,7 @@ main {
         }
       }
       p {
-        font-size: 13px;
+        font-size: var(--font-13);
         margin-bottom: 10px;
       }
     }
@@ -307,12 +321,13 @@ main {
       .middle-section {
         position: relative;
         height: 100%;
-        padding: 30px;
+        padding: 30px 30px 120px 30px;
         @include breakpoints-max(lg) {
-          margin-bottom: 97px;
+          //margin-bottom: 97px;
+          //padding-bottom: 97px;
         }
         @include breakpoints-max(sm) {
-          padding: 30px 15px;
+          padding: 30px 15px 97px 15px;
         }
 
         .section-title {
@@ -428,7 +443,7 @@ main {
                   width: 100%;
 
                   p {
-                    font-size: 20px;
+                    font-size: var(--font-20);
                     color: $black;
                     margin-bottom: 10px;
                   }
@@ -566,7 +581,7 @@ main {
               span {
                 display: block;
                 text-align: center;
-                font-size: 15px;
+                font-size: var(--font-15);;
                 color: $white;
 
                 &[class^=icon-] {
@@ -592,8 +607,15 @@ main {
                   background-color: unset;
                   display: block;
                   text-align: center;
-                  font-size: 15px;
+                  font-size: var(--font-15);;
                   color: $theme-3;
+                }
+              }
+              &:hover {
+                span {
+                  &.text {
+                    color: $white;
+                  }
                 }
               }
             }
@@ -615,7 +637,7 @@ main {
           .title {
             display: inline-block;
             color: $blue-1;
-            font-size: 20px;
+            font-size: var(--font-20);
           }
 
           .btn-export {
@@ -679,9 +701,9 @@ main {
               }
 
               .chart-inner-label {
-                font-size: 0.15em;
                 text-transform: uppercase;
                 text-anchor: middle;
+                font-size: 0.15em;
                 transform: translateY(5%);
               }
             }
@@ -690,7 +712,7 @@ main {
         .chart-labels {
           font-family: $font-nunito;
           [class^='label-']{
-            font-size: 15px;
+            font-size: var(--font-15);;
             display: flex;
             align-items: center;
             padding-left: 25%;
@@ -737,9 +759,9 @@ main {
             top: 0;
             left: 0;
             right: 0;
-            font-size: 15px;
             font-family: $font-nunito;
             font-weight: $font-bold;
+            font-size: 15px;
             text-align: center;
             padding: 5px;
           }
@@ -770,25 +792,12 @@ main {
               }
               &[data-name='theme-1'] {
                 background-color: $theme-1;
-                .name {
-                  color: $theme-1;
-                }
               }
               &[data-name='theme-2'] {
                 background-color: $theme-2;
-                .name {
-                  color: $theme-2;
-                }
               }
               &[data-name='theme-3'] {
                 background-color: $theme-3;
-                .name {
-                  color: $theme-3;
-                }
-              }
-              .name {
-                font-family: $font-nunito;
-                font-size: 16px;
               }
             }
           }
@@ -800,6 +809,8 @@ main {
             bottom: unset;
             border-left: 1px solid $light-grey;
             border-bottom: 1px solid $light-grey;
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
             z-index: 999;
             padding-top: 65px;
             padding-bottom: 15px;
@@ -842,11 +853,11 @@ main {
 
 footer {
   position: absolute;
-  bottom: -97px;
+  bottom: 0;
   left: 0;
   right: 0;
   font-family: $font-lato;
-  font-size: 13px;
+  font-size: var(--font-13);
   color: $black;
   height: 97px;
   border-top: 1px solid black;
